@@ -13,7 +13,7 @@ initI18n().then(() => {
 
 browser.runtime.onInstalled.addListener((details) => {
     if (details.reason === 'install') {
-        browser.tabs.create({ url: 'https://veorw.pages.dev/' }).catch(() => { });
+        browser.tabs.create({ url: 'https://veowr.pages.dev/' }).catch(() => { });
     }
 });
 
