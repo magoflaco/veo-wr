@@ -67,6 +67,7 @@ El pipeline intercepta la descarga y redirige el flujo (o convierte directamente
 ## Estructura del Repositorio
 
 - `/firefox/`: Módulo primario de la Extensión de Firefox.
+- `/chrome/`: Módulo primario de la Extensión de Chrome.
 - `/web/`: Landing page y Web-App standalone que implementa el mismo algoritmo en formato cliente local, con integración de monetización Ads.
 
 ---
