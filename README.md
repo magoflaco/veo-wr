@@ -66,8 +66,8 @@ El pipeline intercepta la descarga y redirige el flujo (o convierte directamente
 
 ## Estructura del Repositorio
 
-- `/extension/v3.0/`: Módulo primario de la Extensión oficial de navegador lista para revisión de Addon Stores. (Incluye Mozilla AMO Compatibility).
-- `/repo/web/`: Landing page y Web-App standalone que implementa el mismo algoritmo en formato cliente local, con integración de monetización Ads.
+- `/firefox/`: Módulo primario de la Extensión de Firefox.
+- `/web/`: Landing page y Web-App standalone que implementa el mismo algoritmo en formato cliente local, con integración de monetización Ads.
 
 ---
 
