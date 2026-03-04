@@ -1,0 +1,98 @@
+{
+    "manifest_version": 3,
+    "name": "Veo Watermark Remover",
+    "version": "2.0.0",
+    "description": "Removes Veo watermarks from AI-generated videos on Google platforms automatically",
+    "permissions": [
+        "downloads",
+        "storage",
+        "tabs",
+        "webRequest"
+    ],
+    "host_permissions": [
+        "*://*.googleapis.com/*",
+        "*://*.google.com/*",
+        "*://*.googleusercontent.com/*",
+        "*://*.gstatic.com/*",
+        "*://gemini.google.com/*",
+        "*://labs.google.com/*",
+        "*://labs.google/*",
+        "*://aistudio.google.com/*"
+    ],
+    "background": {
+        "service_worker": "background_wrapper.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://gemini.google.com/*",
+                "*://labs.google.com/*",
+                "*://labs.google/*",
+                "*://aistudio.google.com/*"
+            ],
+            "js": [
+                "i18n.js",
+                "content.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": true,
+            "match_about_blank": true
+        },
+        {
+            "matches": [
+                "*://gemini.google.com/*",
+                "*://labs.google.com/*",
+                "*://labs.google/*",
+                "*://aistudio.google.com/*"
+            ],
+            "js": [
+                "inject.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": true,
+            "match_about_blank": true,
+            "world": "MAIN"
+        }
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "action": {
+        "default_icon": {
+            "16": "icons/icon-16.png",
+            "48": "icons/icon-48.png",
+            "128": "icons/icon-128.png"
+        },
+        "default_title": "Veo Watermark Remover",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "96": "icons/icon-96.png",
+        "128": "icons/icon-128.png"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "i18n.js",
+                "dashboard.html",
+                "dashboard.js",
+                "processor.html",
+                "processor.js",
+                "ffmpeg.min.js",
+                "814.ffmpeg.js",
+                "ffmpeg-core.js",
+                "ffmpeg-core.wasm",
+                "util.min.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}

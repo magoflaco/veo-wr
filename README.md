@@ -1,12 +1,13 @@
-# Veo Watermark Remover 🎬
+# [Veo Watermark Remover](https://veowr.pages.dev/) 🎬
 
 **Website:** [https://veowr.pages.dev/](https://veowr.pages.dev/)
 
 Bienvenido al repositorio de **Veo Watermark Remover**, una herramienta técnica híbrida (Web + Extensión) diseñada para eliminar de forma las marcas de agua de videos generados por Veo en plataformas de Google AI (Gemini, Labs, etc.).
 
+
 ---
 
-## 🔬 Funcionamiento Técnico a Profundidad
+## 🔬 Funcionamiento Técnico
 
 El proyecto fue desarrollado tras una amplia etapa experimental, donde se extrajeron las marcas de agua directamente de los videos generados, en distintas resoluciones y formatos, y se perfeccionó el algoritmo matemático para retirarlas sin dañar el fondo.
 
@@ -66,8 +67,8 @@ El pipeline intercepta la descarga y redirige el flujo (o convierte directamente
 
 ## Estructura del Repositorio
 
-- `/extension/v3.0/`: Módulo primario de la Extensión oficial de navegador lista para revisión de Addon Stores. (Incluye Mozilla AMO Compatibility).
-- `/repo/web/`: Landing page y Web-App standalone que implementa el mismo algoritmo en formato cliente local, con integración de monetización Ads.
+- `/firefox/`: Módulo primario de la Extensión de Firefox.
+- `/web/`: Landing page y Web-App standalone que implementa el mismo algoritmo en formato cliente local, con integración de monetización Ads.
 
 ---
 
