@@ -6,7 +6,7 @@ Bienvenido al repositorio de **Veo Watermark Remover**, una herramienta técnica
 
 ---
 
-## 🔬 Funcionamiento Técnico a Profundidad
+## 🔬 Funcionamiento Técnico
 
 El proyecto fue desarrollado tras una amplia etapa experimental, donde se extrajeron las marcas de agua directamente de los videos generados, en distintas resoluciones y formatos, y se perfeccionó el algoritmo matemático para retirarlas sin dañar el fondo.
 
