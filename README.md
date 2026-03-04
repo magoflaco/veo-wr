@@ -4,6 +4,7 @@
 
 Bienvenido al repositorio de **Veo Watermark Remover**, una herramienta técnica híbrida (Web + Extensión) diseñada para eliminar de forma las marcas de agua de videos generados por Veo en plataformas de Google AI (Gemini, Labs, etc.).
 
+
 ---
 
 ## 🔬 Funcionamiento Técnico
