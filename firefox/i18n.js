@@ -73,13 +73,13 @@ const I18N_DICT = {
         "opt_sub": "Settings · Watermark Remover",
         "opt_pipeline": "Pipeline",
         "opt_blur_label": "Post-process blur radius",
-        "opt_blur_tip": "Controls smoothing over affected pixels. <b>1–3</b> is ideal. <b>0</b> = no blur.",
+        "opt_blur_tip": "Controls smoothing over affected pixels. 1–3 is ideal. 0 = no blur.",
         "opt_fps_label": "Output FPS",
-        "opt_fps_tip": "<b>auto</b> uses 30fps. Adjust based on original video.",
+        "opt_fps_tip": "auto uses 30fps. Adjust based on original video.",
         "opt_format_label": "Output Format",
         "opt_format_mp4": "MP4 (H.264)",
         "opt_format_webm": "WebM (VP9) — no conversion",
-        "opt_format_tip": "<b>MP4</b> requires conversion via FFmpeg.wasm (~31MB download first time). <b>WebM</b> is instant.",
+        "opt_format_tip": "MP4 requires conversion via FFmpeg.wasm (~31MB download first time). WebM is instant.",
         "opt_behavior_title": "Behavior",
         "opt_auto_label": "Auto-process video downloads",
         "opt_auto_tip": "When active, any video download on supported pages is processed automatically. If disabled, videos download normally.",
@@ -159,13 +159,13 @@ const I18N_DICT = {
         "opt_sub": "Configuración · Watermark Remover",
         "opt_pipeline": "Pipeline",
         "opt_blur_label": "Radio de suavizado post-proceso (blur)",
-        "opt_blur_tip": "Controla el suavizado sobre los píxeles afectados. <b>1–3</b> es ideal. <b>0</b> = sin blur.",
+        "opt_blur_tip": "Controla el suavizado sobre los píxeles afectados. 1–3 es ideal. 0 = sin blur.",
         "opt_fps_label": "FPS de salida",
-        "opt_fps_tip": "<b>auto</b> usa 30fps. Ajusta según el video original.",
+        "opt_fps_tip": "auto usa 30fps. Ajusta según el video original.",
         "opt_format_label": "Formato de salida",
         "opt_format_mp4": "MP4 (H.264)",
         "opt_format_webm": "WebM (VP9) — sin conversión",
-        "opt_format_tip": "<b>MP4</b> requiere conversión via FFmpeg.wasm (se descarga ~31MB la primera vez). <b>WebM</b> es instantáneo.",
+        "opt_format_tip": "MP4 requiere conversión via FFmpeg.wasm (se descarga ~31MB la primera vez). WebM es instantáneo.",
         "opt_behavior_title": "Comportamiento",
         "opt_auto_label": "Auto-procesar descargas de video",
         "opt_auto_tip": "Cuando está activo, cualquier descarga de video en las páginas soportadas se procesa automáticamente. Si está desactivado, los videos se descargan normalmente.",
@@ -199,7 +199,7 @@ const applyTranslations = function () {
         if (el.tagName === 'INPUT' && el.type === 'button') {
             el.value = __t(key);
         } else {
-            el.innerHTML = __t(key);
+            el.textContent = __t(key);
         }
     });
 };
